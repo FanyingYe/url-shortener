@@ -59,24 +59,6 @@ app.post('/u/', function(req, res){
 
 });
 
-/*
-// This get method is used to get all objects
-app.get('/u/', function(req, res){
-
-	surl.find({},function (err, doc){
-		if(err){
-				handleError(res, err.message, "Failed to find all shortURL.");
-		}else{
-			res.send(doc); 
-		}
-	});
-});
-//  This put method is used to create an obj
-app.put('/user', function (req, res) {});
-//  This delete method is used to delete an obj
-app.delete('/u/:ShortUrl', function(req, res) {});
-*/
-
 //  This get method is used to redirect a shortURL to a  longURL  
 app.get('/:ShortUrl', function(req, res){
 

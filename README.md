@@ -1,6 +1,8 @@
 ## 短网址生成器
 
 ### 设计思路
+工作原理：当用户输入一个长URL，通过应用散列算法计算出对应的短URL，并将它们存储到数据库以供日后查询。一旦有人访问短URL，服务器会在数据库中进行查询取得原始长URL并重定向到它。
+
 在base62.js文件中采用除余算法来生成5位短链接，例如 goog.le/JQt0g
 
 采用长度为62，只包含字母和数字(26+26+10)的字符映射表，charSet="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
